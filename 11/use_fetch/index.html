@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="main.css">
+		<script src="getFullUrlForRequest_module.js" defer></script>
+		<script src="createElem_module.js" defer></script>
+		<script src="getLangs_module.js" defer></script>
+		<script src="getTranslate_module.js" defer></script>
+		<script src="main.js" defer></script>
+		<title>Miko переводчик</title>
+	</head>
+	<body>
+		<header>
+			<h1 class="title">Miko Переводчик</h1>
+		</header>
+		<main>
+			<div class="fixed-container flex">		
+				<section class="left-column">
+					<form class="js-form form" action="" method="GET">
+						<label for="intro">Введите слово или фразу для перевода</label>
+						<select class="language js-lang-from window" name="language"></select>
+						<textarea class="intro js-intro window" id="intro" name="intro" required></textarea>
+						
+						<input class="js-btn-translate btn-translate window" type="submit" value="Перевести">
+					</form>
+				</section>
+				<section class="right-column">
+					<h3>Вариант перевода:</h3>
+					<select class="language js-lang-to window" name="language"></select>
+					<div class="translate window js-translate">
+						
+					</div>
+				</section>						
+			</div>
+		</main>
+	</body>
+</html>

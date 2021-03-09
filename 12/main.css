@@ -1,0 +1,40 @@
+.football {
+    position: relative;
+    margin-top: 20px; margin-bottom: 20px;
+}
+.field {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.ball {
+    position: absolute;
+    width: 100px; height: 100px;
+    cursor: pointer;
+    transform: rotate(360deg);
+	transition: transform 1.5s linear;
+}
+
+.ball__right-side {
+	right: 0;
+	transform: rotate(0deg);
+	transition: transform 1.5s linear;
+}
+
+.scoreboard {
+	width: 200px;
+	height: 100px;
+	position: absolute;
+	left: calc(50% - 100px);
+	top: 0;
+	font-size: 40px;
+	background-color: white;
+	border: 2px solid black;
+}
+.left-team, .right-team {
+	width: 47%;
+	height: 100%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}

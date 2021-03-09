@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+    <title>Список задач</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">WEB-приложение "Список дел"</h1>
+    </header>
+    <main>
+      <div class="fixed-container flex">
+        <section class="left-column">
+          <h2 class="subtitle">Список задач</h2>
+            <ol class="js-list">
+
+            </ol>
+        </section>
+        <section class="right-column">
+          <h2>Добавить новую задачу</h2>
+            <form class="form js-form" action="index.html" method="post">
+              <input class="new-deal js-new-deal" type="text" name="new-deal" required>
+              <label for="new-deal">Введите новую задачу</label><br>
+              <input class="btn-add js-btn-add" type="submit" value="Добавить">
+            </form>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

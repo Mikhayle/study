@@ -1,0 +1,68 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: grey;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.fixed-container {
+  max-width: 1920px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  text-align: center;
+}
+
+section {
+  width: 49%;
+}
+
+.subtitle {
+  text-align: center;
+}
+
+.list__item {
+  line-height: 35px;
+  cursor: pointer;
+}
+
+.list__item_done {
+  text-decoration: line-through;
+}
+
+.list__item::after, .list__item:first-child::before {
+  display: block;
+  content: "";
+  width: 100%;
+  border: 1px solid black;
+}
+
+input {
+  margin-top: 30px;
+}
+
+.new-deal {
+  width: 300px;
+  height: 25px;
+}
+
+.btn-add {
+  width: 120px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
